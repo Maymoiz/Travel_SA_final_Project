@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreSA | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">ExploreSA</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" style="height: 45vh;">
+        <video autoplay muted loop class="bg-video">
+            <source src="images/contact.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you.</p>
+        </div>
+    </header>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="contact-info">
+        <div class="info-card">
+            <h3>Email</h3>
+            <p>support@exploresa.co.za</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Phone</h3>
+            <p>+27 12 345 6789</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Location</h3>
+            <p>Pretoria, South Africa</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formStatus" class="form-status"></p>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <h2>Find Us</h2>
+        <img src="images/southafrica-map.webp" alt="Map showing location of ExploreSA office">
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        An exam product for Cavendish University by Moisha CUU276920
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreSA | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">ExploreSA</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" style="height: 45vh;">
+        <video autoplay muted loop class="bg-video">
+            <source src="images/travel_hero.mp4" type="video/mp4" >
+        </video>
+
+        <div class="hero-content">
+            <h1>Gallery</h1>
+            <p>Explore South Africa through stunning visuals.</p>
+        </div>
+    </header>
+
+    <!-- FILTER + SEARCH -->
+    <section class="filter-bar">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beach">Beaches</button>
+            <button class="filter-btn" data-filter="mountain">Mountains</button>
+            <button class="filter-btn" data-filter="safari">Safari</button>
+            <button class="filter-btn" data-filter="city">Cities</button>
+        </div>
+
+        <input type="text" id="gallerySearch" placeholder="Search images...">
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section">
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="gallery-item" data-category="city" data-name="Cape Town">
+                <img src="images/Cape_town.jpg" alt="Cape Town">
+            </div>
+
+            <div class="gallery-item" data-category="safari" data-name="Kruger Park">
+                <img src="images/Kruger_park.jpg" alt="">
+            </div>
+
+            <div class="gallery-item" data-category="mountain" data-name="Drakensberg">
+                <img src="images/drakensberg.jpg" alt="Drakensberg Mountains">
+            </div>
+
+            <div class="gallery-item" data-category="beach" data-name="Durban">
+                <img src="images/Durban.jpg" alt="Durban ">
+            </div>
+
+            <div class="gallery-item" data-category="city" data-name="Stellenbosch">
+                <img src="images/Stellenbosch.webp" alt="">
+            </div>
+
+            <div class="gallery-item" data-category="beach" data-name="Port Elizabeth">
+                <img src="images/portelizabeth.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span id="closeLightbox">&times;</span>
+        <img id="lightboxImg" src="">
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        An exam product for Cavendish University by Moisha CUU27692K
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

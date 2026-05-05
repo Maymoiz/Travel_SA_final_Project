@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreSA | Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">ExploreSA</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" style="height: 45vh;">
+        <video autoplay muted loop class="bg-video">
+            <source src="images/destinations.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1>Top Destinations</h1>
+            <p>Find your next adventure in South Africa.</p>
+        </div>
+    </header>
+
+    <!-- FILTER + SEARCH BAR -->
+    <section class="filter-bar">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beach">Beaches</button>
+            <button class="filter-btn" data-filter="mountain">Mountains</button>
+            <button class="filter-btn" data-filter="safari">Safari</button>
+            <button class="filter-btn" data-filter="city">Cities</button>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="Search destinations...">
+    </section>
+
+    <!-- DESTINATIONS GRID -->
+    <section class="featured">
+        <div class="cards" id="destinationsGrid">
+
+            <div class="card" data-category="city" data-name="Cape Town">
+                <img src="images/capetown.jpg">
+                <h3>Cape Town</h3>
+                <p>Beaches, Table Mountain, nightlife and vibrant culture.</p>
+            </div>
+
+            <div class="card" data-category="safari" data-name="Kruger Park">
+                <img src="images/kruger.jpg">
+                <h3>Kruger National Park</h3>
+                <p>Big 5 safari, wildlife encounters and guided tours.</p>
+            </div>
+
+            <div class="card" data-category="mountain" data-name="Drakensberg">
+                <img src="images/drakensberg.jpg">
+                <h3>Drakensberg</h3>
+                <p>Hiking trails, waterfalls and breathtaking views.</p>
+            </div>
+
+            <div class="card" data-category="beach" data-name="Durban">
+                <img src="images/durban.jpg">
+                <h3>Durban</h3>
+                <p>Golden beaches, warm ocean and rich Indian cuisine.</p>
+            </div>
+
+            <div class="card" data-category="city" data-name="Stellenbosch">
+                <img src="images/stellenbosch.jpg">
+                <h3>Stellenbosch</h3>
+                <p>Wine estates, vineyards and Cape Dutch architecture.</p>
+            </div>
+
+            <div class="card" data-category="beach" data-name="Port Elizabeth">
+                <img src="images/portelizabeth.jpg">
+                <h3>Port Elizabeth</h3>
+                <p>Family beaches, marine life and coastal adventures.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+    </div>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <h2>Explore South Africa on the Map</h2>
+        <img src="images/southafrica-map.png" class="map-img" usemap="#sa-map">
+
+        <map name="sa-map">
+            <area shape="circle" coords="200,300,40" href="#" data-name="Cape Town">
+            <area shape="circle" coords="350,150,40" href="#" data-name="Kruger Park">
+            <area shape="circle" coords="300,250,40" href="#" data-name="Durban">
+        </map>
+    </section>
+
+    <!-- MODAL POPUP -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        An exam product for Cavendish University by Moisha CUU27692K
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+</html>

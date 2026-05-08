@@ -543,13 +543,23 @@ footer {
 }
 
 /* MAP */
+.map-section {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .map-frame {
     width: 100%;
+    max-width: 600px;
     height: 350px;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
 }
+
 
 /* RESPONSIVE CONTACT PAGE */
 @media (max-width: 600px) {
